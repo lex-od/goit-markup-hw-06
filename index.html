@@ -66,7 +66,7 @@
               Эффективные решения<br />
               для вашего бизнеса
             </h1>
-            <button class="hero-btn" type="button" data-modal-open>
+            <button class="accent-btn" type="button" data-modal-open>
               Заказать услугу
             </button>
           </div>
@@ -534,31 +534,51 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <b class="personal-caption">Оставьте свои данные, мы вам перезвоним</b>
-        <form class="personal">
-          <label class="personal-label">
+        <form class="personal-form">
+          <label class="personal-data-label">
             Имя
-            <input class="personal-input" type="text" name="name" />
+            <input
+              class="personal-data-input"
+              type="text"
+              name="name"
+              required
+            />
           </label>
-          <label class="personal-label">
+          <label class="personal-data-label">
             Телефон
-            <input class="personal-input" type="tel" name="phone" />
+            <input
+              class="personal-data-input"
+              type="tel"
+              name="phone"
+              required
+            />
           </label>
-          <label class="personal-label">
+          <label class="personal-data-label">
             Почта
-            <input class="personal-input" type="email" name="email" />
+            <input class="personal-data-input" type="email" name="email" />
           </label>
-          <label class="personal-label comment"
+          <label class="personal-data-label comment"
             >Комментарий<textarea
-              class="personal-input comment"
+              class="personal-data-input comment"
               name="comment"
               placeholder="Введите текст"
             ></textarea>
           </label>
-          <label
-            ><input type="checkbox" name="agreement" />Соглашаюсь с рассылкой и
-            принимаю <a href="">Условия договора</a></label
-          >
-          <button type="submit">Отправить</button>
+
+          <div class="personal-cb-wrapper">
+            <input
+              class="personal-cb-input visually-hidden"
+              type="checkbox"
+              name="agreement"
+              id="agreement"
+            />
+            <label class="personal-cb-label" for="agreement"
+              >Соглашаюсь с рассылкой и принимаю
+              <a class="personal-cond-link" href="">Условия договора</a></label
+            >
+          </div>
+
+          <button class="accent-btn personal" type="submit">Отправить</button>
         </form>
 
         <button class="modal-close" aria-label="Закрыть" data-modal-close>
