@@ -270,7 +270,7 @@
 
 .personal-caption {
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 30px;
 
   text-align: center;
   font-size: 20px;
@@ -279,9 +279,11 @@
 }
 
 .personal-data-label {
+  position: relative;
+
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
+  margin-bottom: 28px;
 
   font-size: 12px;
   line-height: 1.17;
@@ -289,8 +291,12 @@
   color: var(--primary-text-color);
 }
 
+.personal-data-text {
+  position: absolute;
+  transform: translateY(calc(-100% - 4px));
+}
+
 .personal-data-input {
-  margin-top: 4px;
   height: 40px;
   padding-left: 42px;
 
@@ -307,6 +313,20 @@
 
 .personal-data-input:focus {
   border-color: var(--accent-color);
+}
+
+.personal-data-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  fill: var(--title-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.personal-data-input:focus + .personal-data-icon {
+  fill: var(--accent-color);
 }
 
 .personal-data-label.comment {

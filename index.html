@@ -478,7 +478,7 @@
         </div>
 
         <div class="footer-socials-wrapper">
-          <b class="footer-socials-label">Присоединяйтесь</b>
+          <b class="invite-label">Присоединяйтесь</b>
           <ul class="socials-list">
             <li class="socials-list-item">
               <a
@@ -526,6 +526,25 @@
             </li>
           </ul>
         </div>
+
+        <div class="footer-subscribe-wrapper">
+          <b class="invite-label">Подпишитесь на рассылку</b>
+          <form class="subscribe-form">
+            <input
+              class="subscribe-mail-input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+              required
+            />
+            <button class="accent-btn" type="submit">
+              Подписаться
+              <svg class="subscribe-bnt-icon" width="24" height="24">
+                <use href="./images/sprite.svg#send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -536,29 +555,39 @@
         <b class="personal-caption">Оставьте свои данные, мы вам перезвоним</b>
         <form class="personal-form">
           <label class="personal-data-label">
-            Имя
+            <span class="personal-data-text">Имя</span>
             <input
               class="personal-data-input"
               type="text"
               name="name"
               required
             />
+            <svg class="personal-data-icon" width="18" height="18">
+              <use href="./images/sprite.svg#person"></use>
+            </svg>
           </label>
           <label class="personal-data-label">
-            Телефон
+            <span class="personal-data-text">Телефон</span>
             <input
               class="personal-data-input"
               type="tel"
               name="phone"
               required
             />
+            <svg class="personal-data-icon" width="18" height="18">
+              <use href="./images/sprite.svg#phone"></use>
+            </svg>
           </label>
           <label class="personal-data-label">
-            Почта
+            <span class="personal-data-text">Почта</span>
             <input class="personal-data-input" type="email" name="email" />
+            <svg class="personal-data-icon" width="18" height="18">
+              <use href="./images/sprite.svg#email"></use>
+            </svg>
           </label>
           <label class="personal-data-label comment"
-            >Комментарий<textarea
+            ><span class="personal-data-text">Комментарий</span
+            ><textarea
               class="personal-data-input comment"
               name="comment"
               placeholder="Введите текст"
