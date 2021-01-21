@@ -290,7 +290,7 @@
   transform: translate(-50%, -50%) scale(0.8);
 }
 
-.modal-caption {
+.personal-caption {
   display: block;
   margin-bottom: 12px;
 
@@ -300,7 +300,17 @@
   color: var(--title-text-color);
 }
 
-.personal-comment {
+.personal-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.personal-label.comment {
+  margin-bottom: 20px;
+}
+
+.personal-input.comment {
   resize: none;
 }
 

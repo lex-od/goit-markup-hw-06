@@ -533,24 +533,23 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <b class="modal-caption">Оставьте свои данные, мы вам перезвоним</b>
+        <b class="personal-caption">Оставьте свои данные, мы вам перезвоним</b>
         <form class="personal">
-          <label>
+          <label class="personal-label">
             Имя
-            <input type="text" name="name" />
+            <input class="personal-input" type="text" name="name" />
           </label>
-          <label>
+          <label class="personal-label">
             Телефон
-            <input type="phone" name="phone" />
+            <input class="personal-input" type="tel" name="phone" />
           </label>
-          <label>
+          <label class="personal-label">
             Почта
-            <input type="email" name="email" />
+            <input class="personal-input" type="email" name="email" />
           </label>
-          <label>
-            Комментарий
-            <textarea
-              class="personal-comment"
+          <label class="personal-label comment"
+            >Комментарий<textarea
+              class="personal-input comment"
               name="comment"
               placeholder="Введите текст"
             ></textarea>
