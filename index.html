@@ -533,6 +533,35 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <b class="modal-caption">Оставьте свои данные, мы вам перезвоним</b>
+        <form class="personal">
+          <label>
+            Имя
+            <input type="text" name="name" />
+          </label>
+          <label>
+            Телефон
+            <input type="phone" name="phone" />
+          </label>
+          <label>
+            Почта
+            <input type="email" name="email" />
+          </label>
+          <label>
+            Комментарий
+            <textarea
+              class="personal-comment"
+              name="comment"
+              placeholder="Введите текст"
+            ></textarea>
+          </label>
+          <label
+            ><input type="checkbox" name="agreement" />Соглашаюсь с рассылкой и
+            принимаю <a href="">Условия договора</a></label
+          >
+          <button type="submit">Отправить</button>
+        </form>
+
         <button class="modal-close" aria-label="Закрыть" data-modal-close>
           <svg class="modal-close-icon" width="11" height="11">
             <use href="./images/sprite.svg#close"></use>

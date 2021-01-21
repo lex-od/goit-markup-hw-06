@@ -290,6 +290,20 @@
   transform: translate(-50%, -50%) scale(0.8);
 }
 
+.modal-caption {
+  display: block;
+  margin-bottom: 12px;
+
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.15;
+  color: var(--title-text-color);
+}
+
+.personal-comment {
+  resize: none;
+}
+
 .modal-close {
   position: absolute;
   top: 8px;
